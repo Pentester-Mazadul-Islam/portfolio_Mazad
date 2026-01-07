@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mazad</title>
+
+    <link rel="icon" type="image/png" href="\IMAGES/sailogo.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+
+    <canvas id="matrixCanvas"></canvas>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            <div class="logo-box">
+                <span class="name">Mazad Ul Islam</span>
+                <span class="role">Security Researcher</span>
+            </div>
+        </a>
+
+        <nav class="navbar">
+            <a href="#home" class="nav-link active" onclick="showSection('home')">Home</a>
+            <a href="#about" class="nav-link" onclick="showSection('about')">About</a>
+            <a href="#resume" class="nav-link" onclick="showSection('resume')">Resume</a>
+            <a href="#certificates" class="nav-link" onclick="showSection('certificates')">Certificates</a>
+            <a href="#projects" class="nav-link" onclick="showSection('projects')">Projects</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home content-section active">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h1>Md. Mazadul Islam</h1>
+            <h3>And I'm a <span class="pro-text"></span></h3>
+            <p id="scrambleText"><i>"Driven by a passion for cybersecurity, I specialize in ethical hacking and proactive security solutions to safeguard digital environments."</i></p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/md-mazad-ul-islam" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/mazadul-islam" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:pentester.mazadulislam@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/8801746777198" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="Assets/Images/asdfghjhgfd.png" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about content-section">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+            I am a Jr. Penetration Tester at Byte Capsule IT and a certified EHP professional, with hands-on experience in bug hunting, penetration testing, and Active Directory exploitation. I specialize in network security, web & Android application testing, and offensive security techniques. Passionate about ethical hacking, 
+            I strive to uncover vulnerabilities and strengthen cyber defenses through practical, real-world research.
+        </p>
+        
+        <h3 class="sub-title">What I'm Doing</h3>
+        
+        <div class="services">
+            <div class="service-card">
+                <div class="icon-container"><i class="fa-solid fa-user-secret"></i></div>
+                <h4>Ethical Hacking</h4>
+                <p>Identifying vulnerabilities and securing systems by simulating real-world attacks to enhance cybersecurity.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-container"><i class="fa-solid fa-shield-halved"></i></div>
+                <h4>Penetration Testing</h4>
+                <p>Performing comprehensive security assessments of web and Android applications to detect and fix flaws.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-container"><i class="fa-solid fa-network-wired"></i></div>
+                <h4>Active Directory</h4>
+                <p>Enumerating and exploiting Active Directory environments to identify misconfigurations and secure infrastructures.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-container"><i class="fa-solid fa-bug"></i></div>
+                <h4>Bug Hunting</h4>
+                <p>Finding and analyzing vulnerabilities in applications, reporting them responsibly, and contributing to safer systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume content-section">
+        <div class="resume-top-bar">
+            <h2 class="section-title">Resume</h2>
+            <a href="Assets/Pdf/Pentester_Mazad_Resume.pdf" class="download-btn" download>
+                <i class="fa-solid fa-download"></i> Download CV
+            </a>
+        </div>
+
+        <div class="resume-summary">
+            <h3 class="resume-cat-title"><i class="fa-solid fa-user-tie"></i> Professional Summary</h3>
+            <p class="summary-text">
+                Jr. Penetration Tester Intern at Byte Capsule IT with hands-on experience in web application security testing and penetration testing labs. Proficient in Linux-based environments, reconnaissance, enumeration, vulnerability assessment, and professional security reporting through structured ethical hacking training. Strongly focused on building a long-term career in penetration testing and continuously improving offensive security skills.
+            </p>
+        </div>
+
+        <div class="resume-main-grid">
+            <div class="resume-col">
+                <h3 class="resume-cat-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h3>
+                <div class="resume-box">
+                    <div class="res-item">
+                        <span class="res-date">Jan 2026 — Present</span>
+                        <h4>Jr. Penetration Tester (Intern)</h4>
+                        <p class="res-org">Byte Capsule IT</p>
+                        <ul class="res-details">
+                            <li>Collaborating with the security team to perform internal/external penetration tests on client infrastructures.</li>
+                            <li>Assisting in identifying, validating, and documenting security weaknesses across web apps and network services.</li>
+                            <li>Participating in the full security assessment lifecycle, from initial reconnaissance to final remediation support.</li>
+                        </ul>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-date">April 2025 — Dec 2025</span>
+                        <h4>Cybersecurity Analyst (Trainee)</h4>
+                        <p class="res-org">Byte Capsule IT</p>
+                        <ul class="res-details">
+                            <li>Completed structured training in ethical hacking and penetration testing methodologies.</li>
+                            <li>Performed hands-on security testing labs covering web application and Active Directory penetration testing.</li>
+                            <li>Gained practical experience in reconnaissance, enumeration, exploitation techniques, and professional security reporting.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-col">
+                <h3 class="resume-cat-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                <div class="resume-box">
+                    <div class="res-item">
+                        <span class="res-date">2021 — 2025</span>
+                        <h4>Bachelor of Social Science (BSS)</h4>
+                        <p class="res-org">National University</p>
+                        <p class="res-sub">Political Science | CGPA: 2.80 / 4.00</p>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-date">2017 — 2018</span>
+                        <h4>Higher Secondary Certificate (HSC)</h4>
+                        <p class="res-org">Rangpur Govt. College</p>
+                        <p class="res-sub">Business Studies | Result: GPA 4.08 / 5.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume-skills" style="margin-top: 5px; width: 80%;">
+            <h3 class="resume-cat-title"><i class="fa-solid fa-shield-halved"></i> Technical Skills</h3>
+            <div class="skills-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="skill-item">
+                    <div class="skill-labels">
+                        <span>Ethical Hacking</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-labels">
+                        <span>Penetration Testing</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-labels">
+                        <span>Active Directory</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-labels">
+                        <span>Bug Hunting</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-references">
+            <h3 class="resume-cat-title"><i class="fa-solid fa-users"></i> References</h3>
+            <div class="ref-grid">
+                <div class="res-item">
+                    <h4>Sakib Haque Zisan</h4>
+                    <p class="res-org">Founder & CEO, Byte Capsule IT</p>
+                    <p class="res-contact">Phone: +8801796934898</p>
+                    <p class="res-contact">Email: zisansakibhaque@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates content-section">
+        <h2 class="section-title">MY CERTIFICATIONS</h2>
+        <div class="cert-container">
+            <div class="cert-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Ethical Hacking for Professionals (EHP)</h3>
+                <p class="cert-org">Byte Capsule</p>
+                <p class="cert-desc">Mastered professional-grade penetration testing methodologies and vulnerability assessment techniques.</p>
+                <a href="Assets/cert/EHP_cert.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <i class="fa-solid fa-fish-dots"></i>
+                <h3>Certified Phishing Prevention Specialist (CPPS)</h3>
+                <p class="cert-org">Hack & Fix</p>
+                <p class="cert-desc">Developed skills in identifying social engineering tactics and implementing advanced phishing defense mechanisms.</p>
+                <a href="Assets/cert/CPPS_cert.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h3>Foundations of Log Analysis</h3>
+                <p class="cert-org">Red Team Leaders</p>
+                <p class="cert-desc">Gained expertise in analyzing security logs to detect and respond to potential cyber threats.</p>
+                <a href="Assets/cert/LOG-cert.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects content-section">
+        <h2 class="section-title">MY PROJECTS</h2>
+        <div class="projects-placeholder">
+            <div class="construction-container">
+                <div class="construction-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="status-title">Under Construction</h3>
+                <p class="status-desc">I am currently documenting my latest penetration testing labs and security tools. Stay tuned for amazing content!</p>
+                <div class="loading-bar">
+                    <div class="loading-fill"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JAVASCRIPT/matrix.js"></script>
+    <script src="JAVASCRIPT/scramble.js"></script>
+    <script src="JAVASCRIPT/main.js"></script>
+    <script>
+        var typed = new Typed(".pro-text", {
+            strings: ["Ethical Hacker", "Penetration Tester", "Linux Administrator"],
+            typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
+        });
+    </script>
+</body>
+</html>
