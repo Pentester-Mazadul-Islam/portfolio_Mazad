@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Mazad</title>
-    
-    <link rel="icon" type="image/png" href="Assets/Images/logo.png">
+
+    <link rel="icon" type="image/png" href="Assets/Images/profile.png">
     <link rel="stylesheet" href="CSS/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,19 +17,28 @@
     <canvas id="matrixCanvas"></canvas>
 
     <header class="header">
-        <a href="#home" class="logo">
-            <div class="logo-box">
-                <span class="name">Mazad</span>
-                <span class="role">Portfolio</span>
+        <a href="#home" class="logo-box-link">
+            <div class="mini-logo-card">
+                <div class="card-inner">
+                    <div class="logo-side">
+                        <div class="logo-placeholder">
+                            <img src="Assets/Images/logo.png" alt="Logo" class="mini-logo-img">
+                        </div>
+                    </div>
+                    <div class="info-side">
+                        <h1 class="name">Mazad</h1>
+                        <h2 class="role">Security Researcher</h2>
+                    </div>
+                </div>
+                <div class="scan-line"></div>
             </div>
         </a>
-
         <nav class="navbar">
-            <a href="#home" class="nav-link active" onclick="showSection('home')">Home</a>
-            <a href="#about" class="nav-link" onclick="showSection('about')">About</a>
-            <a href="#resume" class="nav-link" onclick="showSection('resume')">Resume</a>
-            <a href="#certificates" class="nav-link" onclick="showSection('certificates')">Certificates</a>
-            <a href="#projects" class="nav-link" onclick="showSection('projects')">Projects</a>
+            <a href="#" class="nav-link active" onclick="showSection('home')">Home</a>
+            <a href="#" class="nav-link" onclick="showSection('about')">About</a>
+            <a href="#" class="nav-link" onclick="showSection('resume')">Resume</a>
+            <a href="#" class="nav-link" onclick="showSection('certificates')">Certificates</a>
+            <a href="#" class="nav-link" onclick="showSection('projects')">Projects</a>
         </nav>
     </header>
 
@@ -261,6 +270,3 @@
     </script>
 </body>
 </html>
-
-
-
