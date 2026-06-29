@@ -470,16 +470,131 @@ section {
     background: transparent !important; /* FIXED */
 }
 
-.projects-placeholder { width: 100%; max-width: 800px; background: rgba(10, 10, 10, 0.8); border: 1px solid #1a1a1a; border-radius: 12px; padding: 60px 40px; text-align: center; transition: 0.3s; }
-.projects-placeholder:hover { border-color: var(--neon-green); }
-.construction-icon i { font-size: 60px; color: var(--neon-green); margin-bottom: 25px; filter: drop-shadow(0 0 10px rgba(0, 255, 65, 0.2)); }
-.status-title { font-size: 32px; color: #fff; margin-bottom: 15px; text-transform: uppercase; }
-.status-title span { color: var(--neon-green); }
-.status-desc { font-size: 16px; color: var(--soft-gray); line-height: 1.6; max-width: 500px; margin: 0 auto 30px; }
-.loading-bar { width: 100px; height: 4px; background: #222; margin: 0 auto; border-radius: 10px; overflow: hidden; }
-.loading-fill { width: 40%; height: 100%; background: var(--neon-green); border-radius: 10px; animation: loading 2s infinite ease-in-out; }
+.projects-container {
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 20px 10px;
+}
 
-@keyframes loading { 0% { transform: translateX(-100%); } 100% { transform: translateX(250%); } }
+.project-subsection {
+    margin-bottom: 40px;
+}
+
+.subsection-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.subsection-title i {
+    color: var(--neon-green);
+    filter: drop-shadow(0 0 8px rgba(0, 255, 65, 0.3));
+}
+
+.subsection-desc {
+    font-size: 15px;
+    color: var(--soft-gray);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Section Divider */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #1a1a1a, var(--neon-green), #1a1a1a, transparent);
+    margin: 40px 0;
+    opacity: 0.6;
+}
+
+/* PDF Grid & Cards */
+.pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.pdf-card {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid #1a1a1a;
+    border-radius: 12px;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.pdf-card:hover {
+    border-color: var(--neon-green);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 255, 65, 0.05);
+}
+
+.pdf-icon {
+    font-size: 32px;
+    color: #ff4a4a; /* PDF standard red icon */
+    filter: drop-shadow(0 0 5px rgba(255, 74, 74, 0.2));
+}
+
+.pdf-info {
+    flex-grow: 1;
+}
+
+.pdf-info h4 {
+    margin: 0 0 6px 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.pdf-info p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--soft-gray);
+    line-height: 1.4;
+}
+
+/* View Button */
+.view-btn {
+    background: transparent;
+    border: 1px solid var(--neon-green);
+    color: var(--neon-green);
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.view-btn:hover {
+    background: var(--neon-green);
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.4);
+}
+
+/* Footer & Media Queries (As Per Your Code) */
+.footer-bottom {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #ff0404;
+    margin: 0;
+}
 
 @media (max-width: 850px) {
     .home { flex-direction: column; text-align: center; }
@@ -487,6 +602,14 @@ section {
     .section-title { font-size: 28px; }
     .resume-main-grid, .ref-grid { grid-template-columns: 1fr; gap: 20px; }
     .cert-container { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    
+    /* Responsive adjustment for PDF Grid */
+    .pdf-grid {
+        grid-template-columns: 1fr;
+    }
+    .pdf-card {
+        padding: 20px 15px;
+    }
 }
 
 /* --- Optimized Header for All Devices --- */
